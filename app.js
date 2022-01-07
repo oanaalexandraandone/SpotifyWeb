@@ -1,12 +1,12 @@
-    const clientId = '4af48ef99f2241709f14de5726745034';
-    const clientSecret = 'd5cb19db3efe42a8942d0b7496c6f09b';
+    const clientId = '';
+    const clientSecret = '';
     const TOKEN =  'https://accounts.spotify.com/api/token';
     const GENRES = `https://api.spotify.com/v1/browse/categories`;
     const GENRESBYID = `https://api.spotify.com/v1/browse/categories/{{genreId}}/playlists?limit={{limit}}`;
     const PLAYLISTS = 'https://api.spotify.com/v1/me/playlists';
     const AUTHORIZE = "https://accounts.spotify.com/authorize";
     var redirect_uri = "http://127.0.0.1:5500/index.html";
-    const authURL = "https://accounts.spotify.com/authorize?client_id=4af48ef99f2241709f14de5726745034&response_type=code&redirect_uri=http://127.0.0.1:5500/index.html&show_dialog=true&scope=user-read-private user-read-email user-modify-playback-state user-read-playback-position user-library-read streaming user-read-playback-state user-read-recently-played playlist-read-private"; 
+    const authURL = "https://accounts.spotify.com/authorize?client_id="+clientId+"&response_type=code&redirect_uri=http://127.0.0.1:5500/index.html&show_dialog=true&scope=user-read-private user-read-email user-modify-playback-state user-read-playback-position user-library-read streaming user-read-playback-state user-read-recently-played playlist-read-private"; 
     var access_token= null;
     var refresh_token = null;
     var flagCalled= false;
